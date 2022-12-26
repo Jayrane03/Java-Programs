@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="indexx.css">
+    
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <script src="https://use.fontawesome.com/0787724f3c.js"></script>
+    <title>Train by your own | J.R Fitness.com</title>
+
+</head>
+
+<body>
+  <section class="header ">
+    <nav>
+    <a href="index.html"><img src="./Images/logo.jpg" alt=""></a>
+     <div class="nav-links" id="navLinks">
+        <i class="fa fa-times "id="menu_icons" onclick="hideMenu()"></i>
+        <ul>
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="./about.html">ABOUT</a></li>
+            <li><a href="./blog.html">BLOG</a></li>
+            <li><a href="exercise.html">EXERCISE</a></li>
+            <li><a href="./contact.html">CONTACT</a></li>
+            <li><a href="./store.html">STORE</a></li>
+            <li><a href="./login_page.html">LOGIN</a></li>
+            <li><a href="./cart.html"><i class="fa fa-shopping-cart"></i></a></li>
+        </ul>
+     </div>   
+     <i class="fa fa-bars" id="menu_icons" onclick="showMenu()"></i>
+</nav>
+
+<div class="text-box">
+
+    <h1>WELCOME TO J-FIT</h1>
+    <p>Here you will get all types of workout.<br>
+        1.Beginner Level Workout <br>
+        2.Intermediate Level Workout <br>
+        3.Advanced Level Workout. <br>
+    </p>
+    <a href="./exercise.html" class="btn">Visit EXERCISE Page <i id="arr-right"class="fa fa-arrow-right" aria-hidden="true"></i> </a>
+
+</div>
+
+  </section>
+
+<!-- Courses -->
+<section class="course">
+   <h1>Courses We Provide</h1>
+    <p style="font-size:20px ">We provide many courses which is good for your hygiene.</p>
+    <div class="row">
+        <div class="col">
+            <h1>PERSONAL TRAINING</h1>
+            <p>A personal trainer can give you the tools and support that you need to reach a health and fitness goal. They can provide support, accountability, education, and a personalized plan of attack, so you may find working with one well worth the investment.</p>
+        </div>
+        <div class="col">
+            <h1>NUTRITION DIET</h1>
+            <p>What are 3 benefits of Zumba?
+                Besides losing weight, Zumba can help lower your risk of heart disease, reduce your blood pressure and bad cholesterol, and boost your good cholesterol. If you have heart disease, your doctor may suggest starting back on the road to fitness in a cardiac rehab program instead of jumping right into a Zumba class.</p>
+        </div>
+        <div class="col">
+            <h1>YOGA</h1>
+            <p>What is the purpose of yoga?<br>
+                “The purpose of yoga is to build strength, awareness and harmony in both the mind and body"<br>
+                Yoga is a great practice for both the body and the mind, it offers peace and mindfulness to its lovers and helps them get through daily stress. Therefore, we have compiled for you some of the most amazing yoga quotes to keep you motivated and excited to get on the mat.
+
+            </p>
+        </div>
+        <div class="col">
+            <h1>ZUMBA</h1>
+            <p>What are 3 benefits of Zumba?
+                Besides losing weight, Zumba can help lower your risk of heart disease, reduce your blood pressure and bad cholesterol, and boost your good cholesterol. If you have heart disease, your doctor may suggest starting back on the road to fitness in a cardiac rehab program instead of jumping right into a Zumba class.</p>
+        </div>
+
+    </div>
+
+
+</p>
+
+</section>
+
+
+
+
+
+
+ <section class="footer">
+    <h4>About Us</h4>
+    <p>At THE GYM, we’re about real fitness. <br> Our no-nonsense, results-driven culture was built on a history rooted in weightlifting</p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+    <p>Made with <i class="fa fa-heart-o "></i> by Jay Rane</p>
+ </section>
+
+
+
+
+
+
+
+
+ <!-- scroll revel animation -->
+ <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
+ <script src="./Images/Products/scrollreveal.min.js"></script>
+    
+    <!-- Java script code to toggle the menu bare -->
+      <script>
+
+     var navLinks=document.getElementById("navLinks");
+
+     function showMenu(){
+        navLinks.style.right="0";
+     }
+
+     function hideMenu(){
+        navLinks.style.right="-2400px";
+     }
+     const sr = ScrollReveal({
+        origin : "top", 
+        distance : "60px",
+        duration : 2500,
+        delay : 200,
+        reset :"true"
+ })
+
+
+sr.reveal(`.col`,{delay:100})
+sr.reveal(`.text-box`,{origin:"left"})
+
+
+
+
+      </script>
+</body>
+
+</html>

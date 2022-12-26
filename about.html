@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="indexx.css">
+    
+    
+    <script src="https://use.fontawesome.com/0787724f3c.js"></script>
+    <title>Train by your own | J.R Fitness.com</title>
+
+</head>
+
+<body>
+  <section class="sub-header">
+    <nav>
+    <a href="index.html"><img src="./Images/logo.jpg" alt=""></a>
+     <div class="nav-links" id="navLinks">
+        <i id="menu_icons" class="fa fa-times " onclick="hideMenu()"></i>
+        <ul>
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="./about.html">ABOUT</a></li>
+            <li><a href="./blog.html">BLOG</a></li>
+            <li><a href="./exercise.html">EXERCISE</a></li>
+            <li><a href="./contact.html">CONTACT</a></li>
+            <li><a href="./store.html">STORE</a></li>
+            <li><a href="./login_page.html">LOGIN</a></li>
+            <li><a href="./cart.html"><i class="fa fa-shopping-cart"></i></a></li>
+        </ul>
+     </div>   
+     <i id="menu_icons" class="fa fa-bars" onclick="showMenu()"></i>
+</nav>
+
+ </section>
+
+      
+ <h1 id="big1">About Us</h1><!-- about  -->
+   <section class="about">
+    
+  <div class="row ab-row">
+   <div id="ab-bottom"class="ab-col ab-one">
+      <h1>We are the one of the professional gyms in Mumbai</h1>
+      <p>In our gym you can do workout plus other facilities like Zumba and Yoga. <br>
+         In our Store you can find our T-shirt's , Shaker , Whey Protein , Mass Gainer. <br>
+         Kindly visit our  store...  
+      </p>
+      <a href="./store.html" class="btn abtn">Store</a>
+   </div>
+   <div class="ab-col">
+     <img src="./Images/about_5.jpg" alt="">
+   </div>
+  </div>
+
+
+
+   </section>
+
+
+
+
+ <section class="footer">
+    <h4>About Us</h4>
+    <p>At THE GYM, we’re about real fitness. <br> Our no-nonsense, results-driven culture was built on a history rooted in weightlifting</p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+    <p>Made with <i class="fa fa-heart-o "></i> by Jay Rane</p>
+ </section>
+ 
+
+ <script src="./Images/Products/scrollreveal.min.js"></script>
+
+    <!-- Java script code to toggle the menu bare -->
+      <script>
+
+     var navLinks=document.getElementById("navLinks");
+
+     function showMenu(){
+        navLinks.style.right="0";
+     }
+
+     function hideMenu(){
+        navLinks.style.right="-200px";
+     }
+     const sr = ScrollReveal({
+      origin : "top", 
+      distance : "60px",
+      duration : 2500,
+      delay : 400,
+      reset :"true"
+})
+sr.reveal(`.ab-col`)
+sr.reveal(`#ab-bottom`,{origin:"bottom"})
+
+
+      </script>
+</body>
+
+</html>

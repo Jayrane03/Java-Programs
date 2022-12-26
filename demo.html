@@ -1,0 +1,142 @@
+<div class="day-grid">
+    
+    <div class="days">
+  <!--    
+      <h1 class="one"><button id="one"> <img src="./Images/day_2.j" alt=""> DAY-1  <br>
+          <br>
+          MONDAY </button>
+         </h1> -->
+  
+         <div class="cont">
+          <img src="./Images/day_2.jpg" height="100%" width="100%" alt="">
+           <div class="overlay">
+              <div class="content">
+                 <h1>DAY-1 <br>
+                    MONDAY
+                    CHEST DAY 
+                   </h1>
+              </div>
+           </div>
+         </div>
+     
+     
+      <h1 class="one"><button id="two"> DAY-2  <br>
+          <br>
+          TUESDAY </button>
+         </h1>
+         <h1 class="one"">DAY-3  <br>
+          <br>
+          WEDNESDAY
+         </h1>
+         <h1 class="one">DAY-4  <br>
+          <br>
+          THURSDAY
+         </h1>
+         <h1 class="one">DAY-5  <br>
+          <br>
+          FRIDAY 
+         </h1>
+              
+         <h1 class="one">DAY-6  <br>
+          <br>
+          SATURDAY 
+         </h1>
+    </div>
+   </div>
+
+
+   css
+   
+.one{
+    text-align: center;
+    border: 3px solid blueviolet;
+    margin: 30px;
+    padding: 40px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    width: 185px;
+}
+.one:hover{
+    transform: translateY(-5px);
+    -webkit-transform: translateY(-5px);
+    -moz-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    -o-transform: translateY(-5px);
+    cursor: pointer;
+    background-color: lightblue;
+    color: black;
+        transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.days{
+    display: grid;
+     /* margin-left: 12vw; */ 
+    grid-template-columns: auto auto auto;
+   gap: 80px 75px;
+   justify-content: space-around;
+    /* flex-basis: 30px; */
+}
+#one{
+    cursor: pointer;
+    border: none;
+    background:none;
+    text-align: center;
+    font-size: 30px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;   
+  } 
+  #two{
+   cursor: pointer;
+    border: none;
+    background:none;
+    text-align: center;
+    font-size: 30px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;   
+  } 
+.cont{
+    width: 26%;
+    height: 280px;
+    position: absolute;
+    left: 20%;
+    transform: translate(-50% ,-50%);
+    box-shadow: 0 10px 20px rgb(40 ,40,40);
+
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity 0,4s ease-in-out;
+    background: rgb(52, 50, 50);
+    cursor: pointer;
+   
+
+}
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+.cont:hover .overlay{
+    opacity: 0.8;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+} */

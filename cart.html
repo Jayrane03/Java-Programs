@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="indexx.css">
+    <script src="store.js" async ></script>
+    
+    <script src="https://use.fontawesome.com/0787724f3c.js"></script>
+    <title>Train by your own | J.R Fitness.com</title>
+
+</head>
+
+<body id="cart-body">
+  <section class="cart-header ">
+    <nav>
+    <a href="index.html"><img src="./Images/logo.jpg" alt=""></a>
+     <div class="nav-links" id="navLinks">
+        <i id="menu_icons" class="fa fa-times " onclick="hideMenu()"></i>
+        <ul>
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="./about.html">ABOUT</a></li>
+            <li><a href="./blog.html">BLOG</a></li>
+            <li><a href="">EXERCISE</a></li>
+            <li><a href="">CONTACT</a></li>
+            <li><a href="./store.html">STORE</a></li>
+            <li><a href="./cart.html"><i class="fa fa-shopping-cart"></i></a></li>
+        </ul>
+     </div>   
+     <i id="menu_icons"class="fa fa-bars" onclick="showMenu()"></i>
+</nav>
+</section>
+<!-- Cart page with add and remove items  -->
+
+<div class="cart-page ">
+   <table>
+      <tr>
+         <th>Product</th>
+         <th>Quantity</th>
+         <th>Sub Total</th>
+      </tr>
+      <tr>
+         <td>
+         <div class="cart-info">
+           <img src="Images/Products/half1.jpg" alt="">
+         
+         <div id="para">
+            <p>Military-Green T-Shirt</p>
+            <p>Rs 300</p>
+            <a class="btn-danger" href="">Remove</a>
+         </div>
+      </div>
+         </td>
+         <td><input type="number" value="1"></td>
+         <td>Rs 300</td>
+      </tr>
+      <tr>
+         <td>
+         <div class="cart-info">
+           <img src="Images/Products/mb_gainer_2.5kg.jpg" alt="">
+         
+         <div id="para">
+            <p>Muscle Blaze Weight Gainer 2.5Kg</p>
+            <p>Rs 3200</p>
+            <a class="btn-danger" href="">Remove</a>
+         </div>
+      </div>
+         </td>
+         <td><input type="number" value="1"></td>
+         <td>Rs 300</td>
+      </tr>
+      <tr>
+         <td>
+         <div class="cart-info">
+           <img src="Images/Products/shaker1.jpg" alt="">
+         
+         <div id="para">
+            <p>White Shaker </p>
+            <p>Rs 350</p>
+            <a class="btn-danger"href="" onclick="removeItems()">Remove</a>
+         </div>
+      </div>
+         </td>
+         <td><input type="number" value="1"></td>
+         <td>Rs 300</td>
+      </tr>
+      
+      
+   </table>
+   <div class="total-price">
+      <table>
+         <tr>
+            <td>Sub Total</td>
+            <td>Rs 200</td>
+         </tr>
+         <tr>
+            <td>Tax</td>
+            <td>Rs 50</td>
+         </tr>
+         <tr>
+            <td>Total</td>
+            <td>Rs 250</td>
+         </tr>
+      </table>
+    </div>
+ </div>
+ 
+  
+
+
+
+ <section class="footer">
+    <h4>About Us</h4>
+    <p>At THE GYM, we’re about real fitness. <br> Our no-nonsense, results-driven culture was built on a history rooted in weightlifting</p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+    <p>Made with <i class="fa fa-heart-o "></i> by Jay Rane</p>
+ </section>
+
+
+
+
+
+
+
+    
+    <!-- Java script code to toggle the menu bare -->
+      <script>
+
+     var navLinks=document.getElementById("navLinks");
+
+     function showMenu(){
+        navLinks.style.right="0";
+     }
+
+     function hideMenu(){
+        navLinks.style.right="-200px";
+     }
+      
+   function removeItems(){
+      var rem = document.getElementsByClassName('btn-danger');
+     rem.s
+   }
+
+
+
+      </script>
+</body>
+
+</html>
